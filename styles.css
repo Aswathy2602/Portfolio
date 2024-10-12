@@ -20,37 +20,39 @@ body {
 header {
     background: #060212e2;
     color: #fff;
-    padding: 50px;
+    padding: 20px; /* Reduced padding */
     min-height: 100px;
     border-bottom: #7d2474 3px solid;
+    display: flex; /* Use Flexbox */
+    justify-content: space-between; /* Space between title and nav */
+    align-items: center; /* Center items vertically */
+}
+
+header h1 {
+    margin-bottom: 10px; /* Remove margin */
+    font-size: 24px; /* Adjust font size */
+}
+
+header nav {
+    margin-top: 0; /* Reset margin */
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+    display: flex; /* Use Flexbox for the nav items */
+    gap: 15px; /* Space between nav items */
+}
+
+header li {
+    padding: 0; /* Remove padding */
 }
 
 header a {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 14px;
-}
-
-header ul {
-    padding: 0;
-    list-style:none;
-}
-
-header li {
-    display: inline;
-    padding: 0 20px 0 20px;
-}
-
-header h1 {
-    float: left;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-header nav {
-    float: right;
-    margin-top: 10px;
+    font-size: 14px; /* Adjust font size */
 }
 
 header .container:after {
