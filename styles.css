@@ -116,19 +116,32 @@ img{
     height: 400px;
     border: #7d2474 solid;
 }
+html, body {
+    height: 100%; /* Ensure full height for both html and body */
+    margin: 0; /* Remove default margin */
+}
+
+.wrapper {
+    display: flex; /* Use Flexbox */
+    flex-direction: column; /* Stack children vertically */
+    min-height: 100vh; /* Minimum height of 100% of the viewport */
+}
+
+main {
+    flex: 1; /* Takes up remaining space */
+}
 
 footer {
-    background-color: #060212e2;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-    border-top: #7d2474 3px solid;
+    background-color: #060212e2; /* Footer background color */
+    color: #fff; /* Footer text color */
+    text-align: center; /* Center footer text */
+    padding: 10px 0; /* Padding for the footer */
+    border-top: #7d2474 3px solid; /* Top border for styling */
 }
 
 footer p {
-    margin: 0;
-    text-align: center;
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center text in footer */
 }
 
 h3{
